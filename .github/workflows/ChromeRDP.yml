@@ -14,4 +14,4 @@ jobs:
     - name: istall
       run: rpd.msi
     - name: configure 
-      run:  ${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe --code="4/0AfJohXkw9w94BNhux3SPjRE6aP7IkKwDDgtjpohXq1HEAn2KxcELUaXDU7vfGohzbfBoxw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
+      run:  C:\Program Files (x86)Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe --code="4/0AfJohXkw9w94BNhux3SPjRE6aP7IkKwDDgtjpohXq1HEAn2KxcELUaXDU7vfGohzbfBoxw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
