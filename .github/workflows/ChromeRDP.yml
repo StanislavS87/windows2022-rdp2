@@ -1,0 +1,16 @@
+name: Windows-RDP
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    timeout-minutes: 999999999999
+
+ - name: Download RDP.
+      run: 
+        Invoke-WebRequest https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi -OutFile rdp.msi
+        run:  rpd.msi
+- name: configure RDP.
+      run:  & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AfJohXkw9w94BNhux3SPjRE6aP7IkKwDDgtjpohXq1HEAn2KxcELUaXDU7vfGohzbfBoxw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
