@@ -4,10 +4,9 @@ on: workflow_dispatch
 
 jobs:
   build:
-
     runs-on: windows-latest
-    timeout-minutes: 999999999999
-
+    timeout-minutes: 99999999999
+  steps:
  - name: dls
       run: 
         Invoke-WebRequest https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi -OutFile rdp.msi
