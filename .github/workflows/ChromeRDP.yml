@@ -12,6 +12,6 @@ jobs:
       run: 
         Invoke-WebRequest https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi -OutFile rdp.msi
     - name: istall
-      run: ./rpd.msi
+      run: ./rdp.msi
     - name: configure 
       run:  C:\Program Files (x86)Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe --code="4/0AfJohXkw9w94BNhux3SPjRE6aP7IkKwDDgtjpohXq1HEAn2KxcELUaXDU7vfGohzbfBoxw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
