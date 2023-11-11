@@ -15,4 +15,4 @@ jobs:
       run: ./rdp.msi
     - name: configure 
       run:  |
-         & 'C:\Program Files (x86)\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AfJohXkw9w94BNhux3SPjRE6aP7IkKwDDgtjpohXq1HEAn2KxcELUaXDU7vfGohzbfBoxw" --name="Stan"
+         &  "C:\Program Files (x86)\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AfJohXkw9w94BNhux3SPjRE6aP7IkKwDDgtjpohXq1HEAn2KxcELUaXDU7vfGohzbfBoxw" --name="Stan"
